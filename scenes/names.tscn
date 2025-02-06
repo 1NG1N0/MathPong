@@ -1,0 +1,108 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc76kl0u0df1f"]
+
+[ext_resource type="Script" path="res://scenes/inicial_menu.gd" id="1_0oyx4"]
+[ext_resource type="FontFile" uid="uid://o8f7tfcb0xws" path="res://assests/fontes/PixelOperator-Bold.ttf" id="1_mn5vp"]
+[ext_resource type="AudioStream" uid="uid://d44lxy6ao5fl" path="res://assests/773458__crashbulb__85-bpm-rock-soul-strut-8-bar-loop-guitar-bass-organ-piano-drums.wav" id="3_ypvyy"]
+
+[node name="Control" type="Node2D"]
+script = ExtResource("1_0oyx4")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1113.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -125.0
+offset_right = 428.0
+offset_bottom = -40.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mn5vp")
+theme_override_font_sizes/font_size = 38
+text = "Nome do jogador 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Control/Panel/Label"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 49.0
+offset_right = 439.0
+offset_bottom = 117.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mn5vp")
+theme_override_font_sizes/font_size = 59
+placeholder_text = "coloque seu nome aqui"
+clear_button_enabled = true
+
+[node name="Label2" type="Label" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 711.0
+offset_top = -125.0
+offset_right = 1139.0
+offset_bottom = -40.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mn5vp")
+theme_override_font_sizes/font_size = 38
+text = "Nome do jogador 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit2" type="LineEdit" parent="Control/Panel/Label2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 49.0
+offset_right = 439.0
+offset_bottom = 117.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_mn5vp")
+theme_override_font_sizes/font_size = 59
+placeholder_text = "coloque seu nome aqui"
+clear_button_enabled = true
+
+[node name="Submit" type="Button" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -193.5
+offset_top = -31.0
+offset_right = 193.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "SUBMETER NOMES"
+autowrap_mode = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ypvyy")
+volume_db = -15.874
+autoplay = true
+playback_type = 1
+
+[connection signal="text_submitted" from="Control/Panel/Label/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="text_submitted" from="Control/Panel/Label2/LineEdit2" to="." method="_on_line_edit_2_text_submitted"]
+[connection signal="pressed" from="Control/Panel/Submit" to="." method="_on_submit_pressed"]

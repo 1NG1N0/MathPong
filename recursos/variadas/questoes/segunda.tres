@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dccmqtvkxp2jc"]
+
+[ext_resource type="Script" path="res://scripts/resource/new_script.gd" id="1_mg0ny"]
+
+[resource]
+script = ExtResource("1_mg0ny")
+questionInfo = "quantos lados tem um circulo"
+type = 0
+options = Array[String](["1", "4", "6", "0"])
+correta = "0"

@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://b50qn6hv7i0ad"]
+
+[ext_resource type="PackedScene" uid="uid://brqfwgfapijei" path="res://scenes/explication.tscn" id="1_2bv8m"]
+[ext_resource type="Texture2D" uid="uid://bwxim6t3xmtqc" path="res://assests/pixil-frame-0 (33).png" id="2_3s50l"]
+[ext_resource type="Texture2D" uid="uid://c2jwo0ed714ck" path="res://assests/ui_buttons_arrow_up_PRESSED.png" id="3_g4fhy"]
+[ext_resource type="Texture2D" uid="uid://cbqbgo5ykkabe" path="res://assests/pixil-frame-0.png" id="4_u0jtn"]
+
+[node name="Node2D" instance=ExtResource("1_2bv8m")]
+
+[node name="Label" parent="Panel" index="0"]
+texture_filter = 1
+
+[node name="Label" parent="Panel/Label/Panel" index="0"]
+texture_filter = 1
+
+[node name="Selecao de resposta" parent="Panel/Label/Panel" index="1"]
+texture_filter = 1
+
+[node name="Label2" parent="Panel/Label/Panel" index="2"]
+texture_filter = 1
+offset_right = 222.0
+text = "ICON CIMA: CIMA
+ICON BAIXO: BAIXO
+"
+autowrap_mode = 3
+
+[node name="Label3" parent="Panel/Label/Panel" index="3"]
+texture_filter = 1
+text = "Com icone da esquerda em cima da opção:
+ICON DE SELEÇÂO"
+
+[node name="Movimentação" parent="Panel/Label/Panel" index="4"]
+texture_filter = 1
+position = Vector2(54, 157)
+scale = Vector2(2.344, 2.335)
+texture = ExtResource("2_3s50l")
+
+[node name="Movimentação2" type="Sprite2D" parent="Panel/Label/Panel" index="5"]
+texture_filter = 1
+position = Vector2(104, 239)
+scale = Vector2(2.344, 2.335)
+texture = ExtResource("3_g4fhy")
+
+[node name="Seleciona" parent="Panel/Label/Panel" index="6"]
+texture_filter = 1
+position = Vector2(409, 222)
+scale = Vector2(2.344, 2.335)
+texture = ExtResource("4_u0jtn")
+
+[node name="Label" parent="Panel/Label/Panel2" index="0"]
+texture_filter = 1
+
+[node name="Selecao de resposta" parent="Panel/Label/Panel2" index="1"]
+texture_filter = 1
+
+[node name="Label2" parent="Panel/Label/Panel2" index="2"]
+texture_filter = 1
+text = "ICON CIMA: CIMA
+ICON BAIXO: BAIXO"
+
+[node name="Label3" parent="Panel/Label/Panel2" index="3"]
+texture_filter = 1
+text = "Com icone da direita em cima da opção:
+ICON DE SELEÇÂO"
+
+[node name="Movimentação" parent="Panel/Label/Panel2" index="4"]
+texture_filter = 1
+position = Vector2(41, 138)
+scale = Vector2(2.34375, 2.33504)
+texture = ExtResource("2_3s50l")
+
+[node name="Movimentação2" type="Sprite2D" parent="Panel/Label/Panel2" index="5"]
+texture_filter = 1
+position = Vector2(116, 217)
+scale = Vector2(2.34375, 2.33504)
+texture = ExtResource("3_g4fhy")
+
+[node name="Seleciona" parent="Panel/Label/Panel2" index="6"]
+position = Vector2(425, 193)
+scale = Vector2(2.344, 2.335)
+texture = ExtResource("4_u0jtn")
+
+[node name="Label2" parent="Panel" index="1"]
+texture_filter = 1
+
+[node name="Label3" parent="Panel" index="2"]
+texture_filter = 1
+text = "CELULAR"
+
+[node name="Button" parent="." index="1"]
+texture_filter = 1

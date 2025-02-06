@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c36mothpb12ks"]
+
+[ext_resource type="Script" path="res://scenes/corpos/guooooooooooooooooooooooooool.gd" id="1_07gjh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48hqw"]
+size = Vector2(54.8979, 20)
+
+[node name="GUOOOOOOOOOOOOOOOOOOOOOOOOOOL" type="Area2D"]
+scale = Vector2(1.4, 70)
+script = ExtResource("1_07gjh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(24.4286, 0)
+scale = Vector2(1.4, 70)
+shape = SubResource("RectangleShape2D_48hqw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

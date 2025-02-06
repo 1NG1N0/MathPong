@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://4gtwegkgdxhe"]
+
+[ext_resource type="Script" path="res://scenes/tutoras.gd" id="1_37yrg"]
+[ext_resource type="FontFile" uid="uid://o8f7tfcb0xws" path="res://assests/fontes/PixelOperator-Bold.ttf" id="1_rscne"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_37yrg")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 124.0
+offset_right = 881.0
+offset_bottom = 243.0
+theme_override_fonts/font = ExtResource("1_rscne")
+theme_override_font_sizes/font_size = 50
+text = "QUAL PLATAFORMA VC ESTA JOGANDO?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 254.0
+offset_top = 356.0
+offset_right = 511.0
+offset_bottom = 441.0
+theme_override_fonts/font = ExtResource("1_rscne")
+theme_override_font_sizes/font_size = 59
+text = "PC"
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 667.0
+offset_top = 356.0
+offset_right = 924.0
+offset_bottom = 441.0
+theme_override_fonts/font = ExtResource("1_rscne")
+theme_override_font_sizes/font_size = 59
+text = "MOBILE"
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/Button2" to="." method="_on_button_2_pressed"]

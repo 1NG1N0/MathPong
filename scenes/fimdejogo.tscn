@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://ujxq1iqdrcs8"]
+
+[ext_resource type="Script" path="res://scenes/fimdejogo.gd" id="1_ky0tb"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(1, 1)
+script = ExtResource("1_ky0tb")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 18.0
+offset_top = 93.0
+offset_right = 1141.0
+offset_bottom = 208.0
+theme_override_font_sizes/font_size = 55
+text = "O jogo Acabou, obrigado por participar 😁"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 264.0
+offset_top = 338.0
+offset_right = 875.0
+offset_bottom = 470.0
+theme_override_font_sizes/font_size = 55
+text = "Começar novamente"
+icon_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

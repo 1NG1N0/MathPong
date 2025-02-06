@@ -1,0 +1,181 @@
+[gd_scene load_steps=8 format=3 uid="uid://brqfwgfapijei"]
+
+[ext_resource type="Script" path="res://scenes/explication.gd" id="1_0oyfj"]
+[ext_resource type="FontFile" uid="uid://o8f7tfcb0xws" path="res://assests/fontes/PixelOperator-Bold.ttf" id="1_3atmo"]
+[ext_resource type="Texture2D" uid="uid://dbmcgdw6imq0s" path="res://assests/WhatsApp Image 2024-12-10 at 14.10.43.jpeg" id="3_7hyno"]
+[ext_resource type="Texture2D" uid="uid://6ryqwe5ogtcr" path="res://assests/WhatsApp Image 2024-12-10 at 14.28.17.jpeg" id="4_vxmcq"]
+[ext_resource type="Texture2D" uid="uid://cbqyjnthvn0tw" path="res://assests/WhatsApp Image 2024-12-10 at 14.18.10.jpeg" id="5_8c5vn"]
+[ext_resource type="Texture2D" uid="uid://ct4rm2mks6865" path="res://assests/WhatsApp Image 2024-12-10 at 14.29.24.jpeg" id="6_bbbhi"]
+[ext_resource type="FontFile" uid="uid://nicuwrh8emdi" path="res://assests/fontes/PixelOperator8.ttf" id="6_gkn5c"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0oyfj")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1153.0
+offset_bottom = 650.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_top = 130.0
+offset_right = 368.0
+offset_bottom = 173.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 42
+text = "Player da esquerda:"
+
+[node name="Panel" type="Panel" parent="Panel/Label"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 552.0
+offset_bottom = 407.0
+
+[node name="Label" type="Label" parent="Panel/Label/Panel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 160.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "Movimentação:"
+
+[node name="Selecao de resposta" type="Label" parent="Panel/Label/Panel"]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 1.0
+offset_right = 537.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "Selecionar a resposta:"
+
+[node name="Label2" type="Label" parent="Panel/Label/Panel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 26.0
+offset_right = 136.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "W para cima
+S para baixo"
+
+[node name="Label3" type="Label" parent="Panel/Label/Panel"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 26.0
+offset_right = 540.0
+offset_bottom = 110.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "Com icone da esquerda em cima da opção:
+Espaço para selecionar"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Movimentação" type="Sprite2D" parent="Panel/Label/Panel"]
+position = Vector2(69, 210)
+scale = Vector2(0.304636, 0.35758)
+texture = ExtResource("3_7hyno")
+
+[node name="Seleciona" type="Sprite2D" parent="Panel/Label/Panel"]
+position = Vector2(382, 228)
+scale = Vector2(0.323899, 0.384453)
+texture = ExtResource("4_vxmcq")
+
+[node name="Panel2" type="Panel" parent="Panel/Label"]
+layout_mode = 0
+offset_left = 598.0
+offset_top = 50.0
+offset_right = 1140.0
+offset_bottom = 407.0
+
+[node name="Label" type="Label" parent="Panel/Label/Panel2"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 160.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "Movimentação:"
+
+[node name="Selecao de resposta" type="Label" parent="Panel/Label/Panel2"]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 1.0
+offset_right = 537.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "Selecionar a resposta:"
+
+[node name="Label2" type="Label" parent="Panel/Label/Panel2"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 26.0
+offset_right = 136.0
+offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "NUM8 para cima
+NUM2 para baixo"
+
+[node name="Label3" type="Label" parent="Panel/Label/Panel2"]
+layout_mode = 0
+offset_left = 284.0
+offset_top = 26.0
+offset_right = 540.0
+offset_bottom = 110.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 25
+text = "Com icone da direita em cima da opção:
+NUM5 para selecionar"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Movimentação" type="Sprite2D" parent="Panel/Label/Panel2"]
+position = Vector2(69, 210)
+scale = Vector2(0.304636, 0.35758)
+texture = ExtResource("5_8c5vn")
+
+[node name="Seleciona" type="Sprite2D" parent="Panel/Label/Panel2"]
+position = Vector2(382, 228)
+scale = Vector2(0.323899, 0.384453)
+texture = ExtResource("6_bbbhi")
+
+[node name="Label2" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 808.0
+offset_top = 130.0
+offset_right = 1151.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 42
+text = "Player da direita:"
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 391.0
+offset_right = 750.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("1_3atmo")
+theme_override_font_sizes/font_size = 65
+text = "COMPUTADOR"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="."]
+offset_left = 651.0
+offset_top = 592.0
+offset_right = 1153.0
+offset_bottom = 649.0
+theme_override_fonts/font = ExtResource("6_gkn5c")
+theme_override_font_sizes/font_size = 35
+text = "COMEÇAR A PARTIDA"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

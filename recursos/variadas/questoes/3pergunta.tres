@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://nyxwlwcxl3l"]
+
+[ext_resource type="Script" path="res://scripts/resource/new_script.gd" id="1_j263s"]
+
+[resource]
+script = ExtResource("1_j263s")
+questionInfo = "46*5(6*7)"
+type = 0
+options = Array[String](["9000", "9360", "9660", "9060"])
+correta = "9660"

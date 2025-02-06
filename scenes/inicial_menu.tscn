@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhae687ie4656"]
+
+[ext_resource type="Script" path="res://scenes/inicial_menu.gd" id="1_lm8n8"]
+[ext_resource type="FontFile" uid="uid://d0yqhrarolumw" path="res://assests/fontes/PixelOperatorMonoHB8.ttf" id="1_xe4nr"]
+[ext_resource type="FontFile" uid="uid://c04e06gv82ip8" path="res://assests/fontes/PixelOperatorMono8-Bold.ttf" id="2_2m3nf"]
+[ext_resource type="Texture2D" uid="uid://bx7bwywb73gfj" path="res://assests/Reddit_Icon_FullColor(1).png" id="3_wbtp2"]
+[ext_resource type="Texture2D" uid="uid://caeev1ic64qnj" path="res://assests/itch_io_logo_icon_145157(1).png" id="4_y8r8k"]
+[ext_resource type="Texture2D" uid="uid://bwpp5718b8frh" path="res://assests/discord_icon_198220(1).png" id="5_0r5c8"]
+[ext_resource type="FontFile" uid="uid://nicuwrh8emdi" path="res://assests/fontes/PixelOperator8.ttf" id="7_lym4o"]
+[ext_resource type="AudioStream" uid="uid://d44lxy6ao5fl" path="res://assests/773458__crashbulb__85-bpm-rock-soul-strut-8-bar-loop-guitar-bass-organ-piano-drums.wav" id="8_qh2ui"]
+
+[node name="InicialMenu" type="Node2D"]
+script = ExtResource("1_lm8n8")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 48.0
+offset_top = 70.0
+offset_right = 701.0
+offset_bottom = 177.0
+theme_override_fonts/font = ExtResource("1_xe4nr")
+theme_override_font_sizes/font_size = 88
+text = "M4THP0NG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = -2.0
+offset_top = 279.0
+offset_right = 543.0
+offset_bottom = 468.0
+
+[node name="Olay" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_2m3nf")
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Sair" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_2m3nf")
+theme_override_font_sizes/font_size = 50
+text = "Sair"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_top = 585.0
+offset_right = 237.0
+offset_bottom = 646.0
+
+[node name="Reddit" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_wbtp2")
+
+[node name="Itch" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_y8r8k")
+
+[node name="Discord" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("5_0r5c8")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 717.0
+offset_top = 595.0
+offset_right = 1148.0
+offset_bottom = 658.0
+theme_override_fonts/font = ExtResource("7_lym4o")
+theme_override_font_sizes/font_size = 10
+text = "Jogo criado e desenvolvido por Nando.Ing
+Músicas:
+\"Drum and Bass Loop\" por CrashBulb - Freesound.org (CC0)"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_qh2ui")
+volume_db = -15.874
+autoplay = true
+playback_type = 1
+
+[connection signal="pressed" from="VBoxContainer/Olay" to="." method="_on_olay_pressed"]
+[connection signal="pressed" from="VBoxContainer/Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="HBoxContainer/Reddit" to="." method="_on_reddit_pressed"]
+[connection signal="pressed" from="HBoxContainer/Itch" to="." method="_on_itch_pressed"]
+[connection signal="pressed" from="HBoxContainer/Discord" to="." method="_on_discord_pressed"]

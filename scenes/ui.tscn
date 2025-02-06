@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://drw4xakowj3ll"]
+
+[ext_resource type="Script" path="res://scenes/ui.gd" id="1_u7vkj"]
+[ext_resource type="Texture2D" uid="uid://dpyix80wkschn" path="res://assests/HeartsFrame1.png" id="2_ny4c0"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_u7vkj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 1150.0
+offset_bottom = 87.0
+
+[node name="playerpoints" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 61
+text = "0"
+
+[node name="enemypoints" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 61
+text = "0"
+
+[node name="CanvasLayer" type="MarginContainer" parent="."]
+offset_left = 41.0
+offset_top = 34.0
+offset_right = 1107.0
+offset_bottom = 57.0
+
+[node name="PlayerLives" type="Sprite2D" parent="CanvasLayer"]
+texture_filter = 1
+position = Vector2(49, 8)
+scale = Vector2(3.125, 3.125)
+texture = ExtResource("2_ny4c0")
+
+[node name="PlayerLives2" type="Sprite2D" parent="CanvasLayer"]
+texture_filter = 1
+position = Vector2(1042, 8)
+scale = Vector2(3.125, 3.125)
+texture = ExtResource("2_ny4c0")
+
+[node name="TextureRect" type="Label" parent="."]
+visible = false
+offset_left = 7.0
+offset_top = 593.0
+offset_right = 1157.0
+offset_bottom = 642.0
+theme_override_font_sizes/font_size = 16
+text = "O primeiro homem a pisar na lua foi?"
+autowrap_mode = 3

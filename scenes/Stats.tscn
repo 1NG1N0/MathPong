@@ -1,0 +1,240 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8ghvqj81s6ob"]
+
+[ext_resource type="FontFile" uid="uid://o8f7tfcb0xws" path="res://assests/fontes/PixelOperator-Bold.ttf" id="1_4bmyl"]
+[ext_resource type="Script" path="res://scenes/stats.gd" id="1_lifgb"]
+[ext_resource type="AudioStream" uid="uid://d44lxy6ao5fl" path="res://assests/773458__crashbulb__85-bpm-rock-soul-strut-8-bar-loop-guitar-bass-organ-piano-drums.wav" id="3_kukdg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lifgb")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 325.0
+grow_vertical = 2
+
+[node name="Player 1" type="VBoxContainer" parent="Panel/Panel"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -158.5
+offset_top = 201.0
+offset_right = 159.5
+offset_bottom = -205.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Panel/Player 1"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="Panel/Panel/Player 1"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="Panel/Panel/Player 1"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label4" type="Label" parent="Panel/Panel/Player 1"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="Panel/Panel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 108.0
+offset_right = 288.0
+offset_bottom = 190.0
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 59
+text = "Player 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Panel2" type="Panel" parent="Panel"]
+modulate = Color(0.133333, 0.152941, 0.960784, 1)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -323.0
+offset_right = 2.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Player 2" type="VBoxContainer" parent="Panel/Panel2"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -158.5
+offset_top = 201.0
+offset_right = 159.5
+offset_bottom = -205.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Panel2/Player 2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="Panel/Panel2/Player 2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="Panel/Panel2/Player 2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label4" type="Label" parent="Panel/Panel2/Player 2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="Panel/Panel2"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 108.0
+offset_right = 288.0
+offset_bottom = 190.0
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 59
+text = "Player 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Nomes" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -252.0
+offset_top = 195.0
+offset_right = 250.0
+offset_bottom = -178.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Nomes"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "Gols Feitos"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="Panel/Nomes"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "Perguntas acertadas"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="Panel/Nomes"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 49
+text = "Perguntas respondidas"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label4" type="Label" parent="Panel/Nomes"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 55
+text = "%"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -251.0
+offset_top = -44.0
+offset_right = 254.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_4bmyl")
+theme_override_font_sizes/font_size = 35
+text = "Voltar a tela inicial"
+autowrap_mode = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_kukdg")
+volume_db = -15.874
+autoplay = true
+playback_type = 1
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]

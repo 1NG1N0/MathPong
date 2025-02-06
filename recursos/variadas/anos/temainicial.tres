@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Quiztheme" load_steps=6 format=3 uid="uid://c8nc44llhqr3f"]
+
+[ext_resource type="Script" path="res://scripts/resource/new_script.gd" id="1_vu77r"]
+[ext_resource type="Script" path="res://scripts/resource/anodeensino.gd" id="2_1bt5o"]
+[ext_resource type="Resource" uid="uid://bfp375pi3sh7p" path="res://recursos/variadas/questoes/new_resource.tres" id="2_hdjew"]
+[ext_resource type="Resource" uid="uid://dccmqtvkxp2jc" path="res://recursos/variadas/questoes/segunda.tres" id="3_kfrl3"]
+[ext_resource type="Resource" uid="uid://nyxwlwcxl3l" path="res://recursos/variadas/questoes/3pergunta.tres" id="4_ttif1"]
+
+[resource]
+script = ExtResource("2_1bt5o")
+anodeensino = Array[ExtResource("1_vu77r")]([ExtResource("2_hdjew"), ExtResource("3_kfrl3"), ExtResource("4_ttif1")])
